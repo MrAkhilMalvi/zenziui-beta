@@ -12,7 +12,7 @@ interface CheckmarkProps {
   className?: string
 }
 
-const draw = {
+const draw:any = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i: number) => ({
     pathLength: 1,

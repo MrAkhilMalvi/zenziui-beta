@@ -4,13 +4,12 @@ import { useState, useRef, type RefObject } from "react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
-import type { ButtonProps } from "@/components/ui/button";
 import { MousePointerClick } from "lucide-react";
 
-interface ParticleButtonProps extends ButtonProps {
-    onSuccess?: () => void;
-    successDuration?: number;
-}
+type ParticleButtonProps = React.ComponentProps<typeof Button> & {
+  particleColor?: string;
+  successDuration?: number; 
+};
 
 function SuccessParticles({
     buttonRef,
@@ -53,11 +52,10 @@ function SuccessParticles({
 
 export default function ParticleButton({
     children,
-    onClick,
-    onSuccess,
-    successDuration = 1000,
-    className,
-    ...props
+  className,
+  particleColor = "#ff0055",
+  successDuration = 800,
+  ...props
 }: ParticleButtonProps) {
     const [showParticles, setShowParticles] = useState(false);
     const buttonRef = useRef<HTMLButtonElement>(null);

@@ -10,7 +10,7 @@ export default function HandWrittenTitle({
     title = "Hand Written",
     subtitle = "Optional subtitle",
 }: HandWrittenTitleProps) {
-    const draw = {
+    const draw:any = {
         hidden: { pathLength: 0, opacity: 0 },
         visible: {
             pathLength: 1,

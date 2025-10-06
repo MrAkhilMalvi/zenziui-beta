@@ -54,7 +54,7 @@ const notificationVariants = {
     exit: { opacity: 0, y: -20 },
 };
 
-const lineVariants = {
+const lineVariants:any = {
     initial: { scaleX: 0, x: "-50%" },
     animate: {
         scaleX: 1,
@@ -68,7 +68,7 @@ const lineVariants = {
     },
 };
 
-const transition = { type: "spring", bounce: 0, duration: 0.4 };
+const transition:any = { type: "spring", bounce: 0, duration: 0.4 };
 
 export function Toolbar({
     className,
