@@ -2,7 +2,7 @@
 
 A modern, lightweight, and customizable **React component library** designed to speed up development with **production-ready UI building blocks**. Built with **TailwindCSS, Radix, and Framer Motion**, ZenziUI focuses on **accessibility, theming, and developer experience**.
 
-![ZenziUI Banner](https://via.placeholder.com/1200x400/6366f1/ffffff?text=ZenziUI+🎨+Modern+React+Components)
+
 
 [![npm version](https://img.shields.io/npm/v/zenziui.svg?style=flat-square)](https://www.npmjs.com/package/zenziui)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/zenziui?style=flat-square)](https://bundlephobia.com/package/zenziui)
