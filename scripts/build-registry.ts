@@ -47,7 +47,7 @@ const getComponentFiles = async (files: File[], registryType: string) => {
         type: registryType,
         content: fileContent,
         path: normalizedPath,
-        target: `/components/zenziui/${fileName}`,
+        target: `components/zenziui/${fileName}`,
       };
     }
     const normalizedPath = file.path.startsWith("/")
