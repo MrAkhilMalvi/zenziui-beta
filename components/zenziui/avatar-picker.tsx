@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, Variants } from "motion/react";
+import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -263,7 +263,7 @@ const avatars: Avatar[] = [
 ];
 
 // Add these animation variants at the top level
-const mainAvatarVariants:Variants = {
+const mainAvatarVariants:any = {
     initial: {
         y: 20,
         opacity: 0,
@@ -314,7 +314,7 @@ const pickerVariants:any = {
     },
 };
 
-const selectedVariants:Variants = {
+const selectedVariants:any = {
     initial: {
         opacity: 0,
         rotate: -180,
