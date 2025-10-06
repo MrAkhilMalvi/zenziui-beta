@@ -16,7 +16,7 @@ export default function Text_05({
     delay = 0.1,
     bouncingIndices = [0, 2, 5],
 }: BouncingTextProps) {
-    const letterAnimation = {
+    const letterAnimation:any = {
         initial: { y: 0 },
         animate: {
             y: [-8, 0],
