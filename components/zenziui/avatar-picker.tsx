@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -263,7 +263,7 @@ const avatars: Avatar[] = [
 ];
 
 // Add these animation variants at the top level
-const mainAvatarVariants:any = {
+const mainAvatarVariants:Variants = {
     initial: {
         y: 20,
         opacity: 0,
@@ -272,7 +272,7 @@ const mainAvatarVariants:any = {
         y: 0,
         opacity: 1,
         transition: {
-            type: "spring",
+            type: "spring" as const,
             stiffness: 200,
             damping: 20,
         },
@@ -306,7 +306,7 @@ const pickerVariants:any = {
             y: 0,
             opacity: 1,
             transition: {
-                type: "spring",
+                type: "spring" as const,
                 stiffness: 300,
                 damping: 20,
             },
@@ -314,7 +314,7 @@ const pickerVariants:any = {
     },
 };
 
-const selectedVariants:any = {
+const selectedVariants:Variants = {
     initial: {
         opacity: 0,
         rotate: -180,
@@ -323,7 +323,7 @@ const selectedVariants:any = {
         opacity: 1,
         rotate: 0,
         transition: {
-            type: "spring",
+            type: "spring" as const,
             stiffness: 200,
             damping: 15,
         },
