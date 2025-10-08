@@ -1,5 +1,5 @@
 import { Sun, Moon, Thermometer, Wind, Power, Settings2 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 
 interface Device {
     id: string;

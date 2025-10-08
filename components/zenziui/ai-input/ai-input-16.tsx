@@ -4,8 +4,8 @@ import { useState, useRef, useCallback, type RefObject } from "react";
 import { Command } from "cmdk";
 import { AnimatePresence, motion } from "motion/react";
 import { MessageSquare, Wand2, Search, SendHorizontal } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { useClickOutside } from "@/hooks/use-click-outside";
+import { cn } from "../../../lib/utils";
+import { useClickOutside } from "../../../hooks/use-click-outside";
 
 const COMMANDS = [
     {

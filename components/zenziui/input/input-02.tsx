@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useRef, type RefObject } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { X, Check, Plus } from "lucide-react";
-import { useTags } from "@/hooks/use-tags";
-import { useClickOutside } from "@/hooks/use-click-outside";
+import { useTags } from "../../../hooks/use-tags";
+import { useClickOutside } from "../../../hooks/use-click-outside";
 
 interface Tag {
     id: string;

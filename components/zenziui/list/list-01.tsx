@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { MessageSquare, type LucideIcon, Music, Store } from "lucide-react";
 
 interface ListItem {

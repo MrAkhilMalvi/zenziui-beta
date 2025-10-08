@@ -1,8 +1,8 @@
 import { LogOut, Flame, Shield, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
+import { Button } from "../../../components/ui/button";
+import { Badge } from "../../../components/ui/badge";
+import { Progress } from "../../../components/ui/progress";
 
 interface Profile04Props {
     name: string;

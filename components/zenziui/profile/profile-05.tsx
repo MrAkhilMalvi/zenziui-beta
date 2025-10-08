@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "../../../components/ui/button";
+import { Badge } from "../../../components/ui/badge";
 import {
     Users,
     Mail,
@@ -11,7 +11,7 @@ import {
     MapPin,
 } from "lucide-react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 
 interface TeamMember {
     id: string;

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
 interface Card09Props {

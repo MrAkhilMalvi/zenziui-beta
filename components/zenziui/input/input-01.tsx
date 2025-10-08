@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { X, Check } from "lucide-react";
 
 interface SimpleInputProps {

@@ -1,6 +1,6 @@
 import { MessageCircle, Sparkles } from "lucide-react";
 import { SettingsGeneration } from "./settings-generation";
-import { Input } from "@/components/ui/input";
+import { Input } from "../../../../components/ui/input";
 
 interface VideoSettings {
     style: string;

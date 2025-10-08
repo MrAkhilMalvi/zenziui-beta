@@ -4,7 +4,7 @@ import {
     CardDescription,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card";
+} from "../../../../components/ui/card";
 import Image from "next/image";
 import { AuthForm } from "./auth-form";
 import { SocialLogin } from "./social-login";

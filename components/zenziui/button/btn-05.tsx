@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "../../../components/ui/button";
+import { cn } from "../../../lib/utils";
 import { motion, useAnimation } from "motion/react";
 import { Trash2Icon } from "lucide-react";
 import { useState } from "react";

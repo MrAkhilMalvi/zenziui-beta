@@ -6,8 +6,8 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
+} from "../../../components/ui/accordion";
+import { cn } from "../../../lib/utils";
 
 interface FAQItemProps {
     question: string;

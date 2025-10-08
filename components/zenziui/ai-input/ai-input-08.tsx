@@ -2,7 +2,7 @@
 
 import { Mic } from "lucide-react";
 import { useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 
 export default function AIInput_08() {
     const [submitted, setSubmitted] = useState(false);

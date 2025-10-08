@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "../../lib/utils";
+import { Card, CardContent } from "../../components/ui/card";
 
 interface Avatar {
     id: number;

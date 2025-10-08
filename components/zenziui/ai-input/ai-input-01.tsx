@@ -2,9 +2,9 @@
 
 import { CornerRightUp, Mic } from "lucide-react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
-import { Textarea } from "@/components/ui/textarea";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { cn } from "../../../lib/utils";
+import { Textarea } from "../../ui/textarea";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 export default function AIInput_01() {
   const { textareaRef, adjustHeight } = useAutoResizeTextarea({

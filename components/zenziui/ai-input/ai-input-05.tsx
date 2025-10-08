@@ -2,9 +2,9 @@
 
 import { CornerRightUp } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { Textarea } from "../../../components/ui/textarea";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 const INITIAL_TEXT = "What can i do for you?";
 const SPEED = 30;

@@ -1,10 +1,10 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { motion, useAnimation } from "motion/react";
 import { Zap } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 
 interface Btn04Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     onPowerUp?: () => void;

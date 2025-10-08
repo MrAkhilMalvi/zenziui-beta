@@ -2,10 +2,10 @@
 
 import { ArrowRight, Bot } from "lucide-react";
 import { useState, useRef, type RefObject } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
-import { useClickOutside } from "@/hooks/use-click-outside";
+import { Textarea } from "../../../components/ui/textarea";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
+import { useClickOutside } from "../../../hooks/use-click-outside";
 
 const AI_AGENTS = [
     { name: "Copywriter Agent", description: "Write anything you want" },

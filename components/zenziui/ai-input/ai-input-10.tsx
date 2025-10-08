@@ -12,11 +12,11 @@ import {
     Unlock,
 } from "lucide-react";
 import { useState, useRef, useCallback, type RefObject } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
-import { useFileInput } from "@/hooks/use-file-input";
-import { useClickOutside } from "@/hooks/use-click-outside";
+import { Textarea } from "../../../components/ui/textarea";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
+import { useFileInput } from "../../../hooks/use-file-input";
+import { useClickOutside } from "../../../hooks/use-click-outside";
 
 const AI_MODELS = [
     { name: "GPT-4", description: "The popular kid" },

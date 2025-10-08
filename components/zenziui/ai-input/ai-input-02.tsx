@@ -2,10 +2,10 @@
 
 import { CornerRightUp, FileUp, Paperclip, X } from "lucide-react";
 import { useState } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useFileInput } from "@/hooks/use-file-input";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { Textarea } from "../../../components/ui/textarea";
+import { cn } from "../../../lib/utils";
+import { useFileInput } from "../../../hooks/use-file-input";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 interface FileDisplayProps {
     fileName: string;

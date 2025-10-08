@@ -1,6 +1,6 @@
 import { Clock, X, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { Button } from "../../../components/ui/button";
+import { Progress } from "../../../components/ui/progress";
 import Image from "next/image";
 
 export default function Card_10() {

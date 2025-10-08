@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { Upload, X, FileText } from "lucide-react";
-import { useFileInput } from "@/hooks/use-file-input";
+import { useFileInput } from "../../../hooks/use-file-input";
 
 export default function Input_03() {
     const [isDragging, setIsDragging] = useState(false);

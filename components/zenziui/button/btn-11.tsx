@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "../../../components/ui/button";
+import { cn } from "../../../lib/utils";
 import { ChevronRight } from "lucide-react";
 
 interface Btn11Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {

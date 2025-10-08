@@ -2,10 +2,10 @@
 
 import { Globe, Paperclip, Send } from "lucide-react";
 import { useState } from "react";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "../../../components/ui/textarea";
 import { motion, AnimatePresence } from "motion/react";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 export default function AIInput_04() {
     const [value, setValue] = useState("");

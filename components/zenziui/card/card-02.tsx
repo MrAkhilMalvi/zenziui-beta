@@ -1,7 +1,7 @@
 import { Calendar, Sparkles, Code2, ExternalLink, Share2 } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "../../../components/ui/button";
+import { cn } from "../../../lib/utils";
 
 interface Skill {
     name: string;

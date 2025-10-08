@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import { Mail, Link as LinkIcon, MapPin, ExternalLink } from "lucide-react";
 import Image from "next/image";
 

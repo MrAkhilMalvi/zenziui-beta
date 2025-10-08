@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { Textarea } from "../../components/ui/textarea";
+import { cn } from "../../lib/utils";
+import { useAutoResizeTextarea } from "../../hooks/use-auto-resize-textarea";
 import {
     ImageIcon,
     FileUp,

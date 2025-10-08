@@ -24,9 +24,9 @@ import {
   Palette,
   Bookmark,
 } from "lucide-react"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import { cn } from "@/lib/utils"
+import { Input } from "../../components/ui/input"
+import { Badge } from "../../components/ui/badge"
+import { cn } from "../../lib/utils"
 
 interface Action {
   id: string

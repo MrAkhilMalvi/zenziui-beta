@@ -47,7 +47,7 @@ const getComponentFiles = async (files: File[], registryType: string) => {
         type: registryType,
         content: fileContent,
         path: normalizedPath,
-        target: `components/zenziui/${fileName}`,
+        target: `/components/zenziui/${fileName}`,
       };
     }
     const normalizedPath = file.path.startsWith("/")
@@ -61,13 +61,13 @@ const getComponentFiles = async (files: File[], registryType: string) => {
     const getTargetPath = (type: string) => {
       switch (type) {
         case "registry:hook":
-          return `hooks/${fileName}`;
+          return `/hooks/${fileName}`;
         case "registry:lib":
-          return `lib/${fileName}`;
+          return `/lib/${fileName}`;
         case "registry:block":
-          return `blocks/${fileName}`;
+          return `/blocks/${fileName}`;
         default:
-          return `components/zenziui/${fileName}`;
+          return `/components/zenziui/${fileName}`;
       }
     };
 

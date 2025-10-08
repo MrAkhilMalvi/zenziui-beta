@@ -2,15 +2,15 @@
 
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "../../../components/ui/textarea";
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+} from "../../../components/ui/tooltip";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 const AVATARS = [
     {

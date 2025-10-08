@@ -2,9 +2,9 @@
 
 import { ArrowRight, Brain } from "lucide-react";
 import { useRef, useState } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { Textarea } from "../../../components/ui/textarea";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 interface ToggleButtonProps {
     icon: React.ReactNode;

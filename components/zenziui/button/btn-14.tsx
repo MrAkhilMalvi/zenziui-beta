@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "../../../components/ui/button";
+import { cn } from "../../../lib/utils";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 interface Btn14Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {

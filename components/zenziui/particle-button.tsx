@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useRef, type RefObject } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import { motion, AnimatePresence } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import { MousePointerClick } from "lucide-react";
 
 type ParticleButtonProps = React.ComponentProps<typeof Button> & {

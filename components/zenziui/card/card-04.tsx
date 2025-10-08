@@ -7,7 +7,7 @@ import {
     Users,
 } from "lucide-react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 
 interface Message {
     id: string;

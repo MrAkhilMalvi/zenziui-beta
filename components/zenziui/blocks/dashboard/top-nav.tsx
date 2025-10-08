@@ -2,7 +2,7 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../../../../components/ui/dropdown-menu";
 import Image from "next/image";
 import { Bell, Sun, Moon, ChevronRight } from "lucide-react";
 import Profile01 from "./profile-01";

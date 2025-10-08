@@ -2,9 +2,9 @@
 
 import { CornerRightUp } from "lucide-react";
 import { useState, useEffect } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
+import { Textarea } from "../../../components/ui/textarea";
+import { cn } from "../../../lib/utils";
+import { useAutoResizeTextarea } from "../../../hooks/use-auto-resize-textarea";
 
 export default function AIInput_07() {
     const [inputValue, setInputValue] = useState("");

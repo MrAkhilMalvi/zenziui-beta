@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { Check, Copy } from "lucide-react";
-import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
+import { useCopyToClipboard } from "../../../hooks/use-copy-to-clipboard";
 
 interface ColorInputProps {
   onChange?: (color: string) => void; // Callback for final color
