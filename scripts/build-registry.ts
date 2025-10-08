@@ -36,38 +36,25 @@ async function writeFileRecursive(filePath: string, data: string) {
 
 const getComponentFiles = async (files: File[], registryType: string) => {
   const filesArrayPromises = (files ?? []).map(async (file) => {
-    if (typeof file === "string") {
-      const normalizedPath = file.startsWith("/") ? file : `/${file}`;
-      const filePath = path.join(REGISTRY_BASE_PATH, normalizedPath);
-      const fileContent = await fs.readFile(filePath, "utf-8");
+    const filePathStr = typeof file === "string" ? file : file.path;
 
-      const fileName = normalizedPath.split("/").pop() || "";
-
-      return {
-        type: registryType,
-        content: fileContent,
-        path: normalizedPath,
-        target: `/components/zenziui/${fileName}`,
-      };
-    }
-    const normalizedPath = file.path.startsWith("/")
-      ? file.path
-      : `/${file.path}`;
+    // ✅ Ensure no leading slash
+    const normalizedPath = filePathStr.replace(/^\/+/, "");
     const filePath = path.join(REGISTRY_BASE_PATH, normalizedPath);
     const fileContent = await fs.readFile(filePath, "utf-8");
 
-    const fileName = normalizedPath.split("/").pop() || "";
+    const fileName = path.basename(normalizedPath);
 
     const getTargetPath = (type: string) => {
       switch (type) {
         case "registry:hook":
-          return `/hooks/${fileName}`;
+          return `hooks/${fileName}`;
         case "registry:lib":
-          return `/lib/${fileName}`;
+          return `lib/${fileName}`;
         case "registry:block":
-          return `/blocks/${fileName}`;
+          return `blocks/${fileName}`;
         default:
-          return `/components/zenziui/${fileName}`;
+          return `components/zenziui/${fileName}`;
       }
     };
 
@@ -77,17 +64,18 @@ const getComponentFiles = async (files: File[], registryType: string) => {
     return {
       type: fileType,
       content: fileContent,
-      path: normalizedPath,
+      path: normalizedPath, // ✅ relative only
       target:
         typeof file === "string"
           ? getTargetPath(registryType)
-          : file.target || getTargetPath(fileType),
+          : file.target?.replace(/^\/+/, "") || getTargetPath(fileType), // ✅ no leading /
     };
   });
 
   const filesArray = await Promise.all(filesArrayPromises);
   return filesArray;
 };
+
 
 const main = async () => {
   for (let i = 0; i < registry.length; i++) {
