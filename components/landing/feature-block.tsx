@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "../../../lib/utils";
+import { cn } from "../../lib/utils";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Nextjs from "@/components/icons/nextjs";
