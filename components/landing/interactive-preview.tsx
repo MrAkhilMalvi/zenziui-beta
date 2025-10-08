@@ -29,48 +29,52 @@ const FEATURES: Feature[] = [
         icon: <Palette className="w-5 h-5" />,
         title: "Fully Customizable",
         description: "Tailwind-based styling that's easy to modify and extend.",
-        preview: (
-            <div className="grid grid-cols-3 gap-2">
-                {[
-                    "bg-blue-500",
-                    "bg-emerald-500",
-                    "bg-purple-500",
-                    "bg-amber-500",
-                    "bg-pink-500",
-                    "bg-cyan-500"
-                ].map((color, i) => (
-                    <div
-                        key={i}
-                        className={cn(
-                            "aspect-square rounded-lg transition-transform hover:scale-105",
-                            color
-                        )}
-                    />
-                ))}
-            </div>
-        )
+preview: (
+  <div className="w-full h-full flex items-center justify-center">
+    <div className="grid grid-cols-3 gap-3 w-full max-w-[500px]">
+      {[
+        "bg-blue-500",
+        "bg-emerald-500",
+        "bg-purple-500",
+        "bg-amber-500",
+        "bg-pink-500",
+        "bg-cyan-500"
+      ].map((color, i) => (
+        <div
+          key={i}
+          className={cn(
+            "aspect-square rounded-lg transition-transform hover:scale-105",
+            color
+          )}
+        />
+      ))}
+    </div>
+  </div>
+)
+
     },
-    {
-        icon: <Zap className="w-5 h-5" />,
-        title: "Interactive Elements",
-        description: "Smooth animations and transitions built-in.",
-        preview: (
-            <div className="flex items-center justify-center">
-                <motion.div
-                    animate={{ 
-                        scale: [1, 1.2, 1],
-                        rotate: [0, 180, 360] 
-                    }}
-                    transition={{ 
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="w-16 h-16 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl"
-                />
-            </div>
-        )
-    }
+{
+    icon: <Zap className="w-5 h-5" />,
+    title: "Interactive Elements",
+    description: "Smooth animations and transitions built-in.",
+    preview: (
+        <div className="w-full h-full flex items-center justify-center">
+            <motion.div
+                animate={{
+                    scale: [1, 1.2, 1],
+                    rotate: [0, 180, 360],
+                }}
+                transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                }}
+                className="w-24 h-24 md:w-32 md:h-32 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl shadow-lg"
+            />
+        </div>
+    )
+}
+
 ];
 
 export function InteractivePreview() {
