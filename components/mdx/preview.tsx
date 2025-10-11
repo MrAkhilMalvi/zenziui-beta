@@ -26,7 +26,7 @@ export function Preview({
   comment = [],
   isBlock = false,
 }: PreviewProps) {
-  console.log(prePath + link);
+  console.log(`${prePath}/preview/${link}`);
   return (
     <>
       <div className={cn("w-full overflow-hidden", className)}>
