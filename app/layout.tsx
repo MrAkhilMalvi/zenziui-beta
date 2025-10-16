@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
 import { RootProvider } from "fumadocs-ui/provider";
 import { ThemeProvider } from "next-themes";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,32 +23,35 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <ViewTransitions>
       <html lang="en">
         <head>
-<script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7399474383706604"
-  crossOrigin="anonymous"
-></script>
+          {/* ✅ Load AdSense script client-side */}
+          <Script
+            id="adsbygoogle-script"
+            async
+            strategy="afterInteractive"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7399474383706604"
+            crossOrigin="anonymous"
+          />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <RootProvider>
-          <ThemeProvider
+            <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
             >
-            <div className="flex flex-col min-h-screen">
-              <div className="flex-1">{children}</div>
-            </div>
+              <div className="flex flex-col min-h-screen">
+                <div className="flex-1">{children}</div>
+              </div>
             </ThemeProvider>
           </RootProvider>
         </body>
