@@ -28,8 +28,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="en">
         <head>
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7399474383706604"
-     crossorigin="anonymous"></script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7399474383706604" crossorigin="anonymous"></script>
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
